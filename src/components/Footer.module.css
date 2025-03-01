@@ -1,0 +1,157 @@
+.footer {
+  font-family: "Open Sans", sans-serif;
+
+  padding: 4.58rem 2.86rem 2.86rem;
+
+  color: var(--White);
+  background-color: var(--VeryDarkBlue);
+}
+
+.footer a {
+  text-decoration: none;
+
+  color: var(--White);
+}
+
+.footer .footerContent {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4rem;
+}
+
+.footer .logo {
+  width: 12.58rem;
+  margin-bottom: 2.86rem;
+}
+
+.footer .contact {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.footer .contact:first-child {
+  margin-bottom: 1.43rem;
+}
+
+.footer .contact img {
+  width: 1.43rem;
+}
+
+.footer .contact span {
+  font-size: 1.15rem;
+}
+
+.footer .columnsNav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.43rem;
+}
+
+.footer .columnsNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.43rem;
+}
+
+.footer .columnsNav a {
+  font-size: 1rem;
+
+  transition: .3s;
+}
+
+.footer .columnsNav a:hover,
+.footer .columnsNav a:focus {
+  color: var(--BrightBlue);
+}
+
+.footer .socialMediaNav {
+  display: flex;
+  justify-content: center;
+
+  gap: 1.15rem;
+}
+
+.footer .socialMediaNav a {
+  padding: 0.58rem;
+  border: 1px solid;
+  border-radius: 50%;
+
+  font-size: 1.43rem;
+  line-height: 0;
+
+  transition: .3s;
+}
+
+.footer .socialMediaNav .iconFacebook:hover,
+.footer .socialMediaNav .iconFacebook:focus {
+  border-color: #0866FF;
+
+  color: #0866FF;
+}
+
+.footer .socialMediaNav .iconTwitter:hover,
+.footer .socialMediaNav .iconTwitter:focus {
+  border-color: #00ACEE;
+
+  color: #00ACEE;
+}
+
+.footer .socialMediaNav .iconInstagram:hover,
+.footer .socialMediaNav .iconInstagram:focus {
+  border-color: #CE125B;
+
+  color: #CE125B;
+}
+
+/* TABLET RESPONSIVE */
+
+@media screen and (min-width: 768px){
+  .footer {
+    /* flex-wrap: wrap; */
+
+    padding-inline: 2.25rem;
+  }
+
+  .footer .footerContent {
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 0;
+  }
+
+  .footer .columnsNav {
+    flex-direction: row;
+
+    gap: 2rem;
+  }
+
+  .footer .socialMediaNav {
+    align-items: start;
+  }
+}
+
+/* DESKTOP RESPONSIVE */
+
+@media screen and (min-width: 1024px){
+  .footer {
+    padding: 6.5rem 4rem 4.5rem;
+  }
+
+  .footer .logo {
+    margin-bottom: 1.25rem;
+  }
+
+  .footer .footerContent {
+    width: 90%;
+  }
+
+  .footer .columnsNav {
+    gap: 6rem;
+  }
+}

@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.72rem;
+}
+
+.header .logo {
+  width: 5.7rem;
+}
+
+.header nav {
+  display: flex;
+
+  gap: 1.72rem;
+}
+
+.header a {
+  font-family: 'Relaway', sans-serif;
+  text-decoration: none;
+  
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: var(--VeryDarkBlue);
+
+  transition: .3s;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--BrightBlue);
+}
+
+/* SMALL MOBILE RESPONSIVE */
+
+@media screen and (max-width: 330px){
+  .header {
+    padding-inline: 1.15rem;
+  }
+
+  .header nav {
+    gap: 1.15rem;
+  }
+}
+
+/* TABLET RESPONSIVE */
+
+@media screen and (min-width: 768px){
+  .header .logo {
+    width: 10.5rem;
+  }
+}
+
+/* DESKTOP RESPONSIVE */
+
+@media screen and (min-width: 1024px){
+  .header {
+    padding: 5rem 4rem 2.5rem;
+  }
+
+  .header nav {
+    gap: 3.5rem;
+  }
+}
